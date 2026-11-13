@@ -104,10 +104,10 @@ export default function Home() {
               <p className="intro">I like making stuff! Usually that&apos;s web apps or Discord bots, but if an idea sounds fun, I&apos;ll probably give it a shot.</p>
               <p className="intro">I stream on Twitch every now and then, too. Anyway, this is my little spot on the internet, so poke around, check out my stuff, and feel free to say hi!</p>
               <div className="home-links"><a href="#projects">what I make <ArrowUpRight size={15} /></a><a href="#contact">say hello <ArrowUpRight size={15} /></a></div>
-              <div className="social-icons" aria-label="Social links">
-                {socials.map((social) => <a key={social.label} href={social.url} target="_blank" rel="noreferrer" aria-label={social.label} title={social.label}>{social.icon}</a>)}
-              </div>
             </section>
+            <div className="social-icons" aria-label="Social links">
+              {socials.map((social) => <a key={social.label} href={social.url} target="_blank" rel="noreferrer" aria-label={social.label} title={social.label}>{social.icon}</a>)}
+            </div>
           </div>
         )}
         {view === "projects" && <section className="inner-content"><h1>Making things</h1><p className="section-intro">Web apps, Discord bots, and whatever else I&apos;m curious enough to try building. You can find my code over on GitHub.</p><a className="feature-link" href="https://github.com/lunyavera" target="_blank" rel="noreferrer"><BrandIcon icon={siGithub} /><span><strong>Find my code on GitHub</strong><small>github.com/lunyavera</small></span><ArrowUpRight size={18} /></a></section>}
